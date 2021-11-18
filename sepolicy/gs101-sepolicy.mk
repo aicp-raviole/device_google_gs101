@@ -51,3 +51,9 @@ endif
 
 # Health HAL
 BOARD_SEPOLICY_DIRS += device/google/gs101/sepolicy/health
+
+# AdaptiveConnectivity
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/connectivity_thermal_power_manager
+
+# Turbo Adapter
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/turbo_adapter
