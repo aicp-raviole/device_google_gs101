@@ -20,6 +20,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # AVB flags
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
+# Kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+
 # Manifests
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs101/lineage_compatibility_matrix.xml
 
