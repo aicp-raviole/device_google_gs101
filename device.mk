@@ -607,7 +607,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.set_display_power_timer
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_content_detection_for_refresh_rate=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
-PRODUCT_SYSTEM_PROPERTIES += ro.launcher.blur.appLaunch=0
+#Arrow provides this by default
+#PRODUCT_SYSTEM_PROPERTIES += ro.launcher.blur.appLaunch=0
 
 # Must align with HAL types Dataspace
 # The data space of wide color gamut composition preference is Dataspace::DISPLAY_P3
@@ -1082,7 +1083,7 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := device/google/gs101/device_framework
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUI
 
 # Keymaster configuration
 PRODUCT_COPY_FILES += \

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Calyx Institute
+# Copyright (C) 2021 The Arrow Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -22,9 +22,6 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
-
-# Manifests
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs101/lineage_compatibility_matrix.xml
 
 # Enable chain partition for vendor.
 BOARD_AVB_VBMETA_VENDOR := vendor
